@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EcoSync Pro</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🌱 EcoSync</h1>
+  <p class="subtitle">Smart Environmental Dashboard</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>🌡 Temperature</h2>
+      <p id="temp">--</p>
+    </div>
+
+    <div class="card">
+      <h2>💧 Humidity</h2>
+      <p id="hum">--</p>
+    </div>
+
+    <div class="card">
+      <h2>🌱 Soil Moisture</h2>
+      <p id="soil">--</p>
+    </div>
+  </div>
+
+  <div class="big-card">
+    <h2>🌦 Weather</h2>
+    <p id="weather">Loading...</p>
+  </div>
+
+  <div class="big-card">
+    <h2>💧 Irrigation Status</h2>
+    <p id="irrigation">Checking...</p>
+  </div>
+
+  <div class="big-card">
+  <h2>🤖 AI Eco Tips</h2>
+  <p id="ai">Loading AI suggestions...</p>
+  </div>
+
+  <div class="big-card">
+  <h2>📊 Live Sensor Data</h2>
+  <canvas id="chart"></canvas>
+</div>
+
+  <button onclick="simulate()">Simulate Dry Soil</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
